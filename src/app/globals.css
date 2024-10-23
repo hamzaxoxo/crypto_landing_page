@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-yukita-black {
+    font-family: var(--font-yukita-black);
+  }
+  
+  .font-yukita-bold {
+    font-family: var(--font-yukita-bold);
+  }
+  
+  .font-yukita-regular {
+    font-family: var(--font-yukita-regular);
+  }
+
+
