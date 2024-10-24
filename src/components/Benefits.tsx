@@ -26,10 +26,10 @@ export default function Benefits() {
     return (
         <section className="bg-white">
             
-            <div className="max-w-screen-xl mx-auto lg:gap-8 xl:gap-0 py-8 lg:py-16 flex lg:flex-row md:flex-row sm:flex-col flex-col-reverse gap-10">
+            <div className="max-w-screen mx-auto lg:gap-8 xl:gap-0 pb-8 lg:pb-16 flex lg:flex-row md:flex-row sm:flex-col flex-col-reverse gap-10">
                 <div className="mr-auto place-self-center lg:col-span-7">
                     <div className="flex flex-col items-center justify-center">
-                        <div className="px-5 sm:pl-4 lg:max-w-xl md:w-full w-full
+                        <div className="px-5 sm:pl-[7rem] lg:max-w-xl md:w-full w-full
                         ">
                             {/* <h1 className="lg:text-left md:text-center text-center text-[32px] sm:text-[38px] md:text-[48px] font-bold text-gray-900 mb-8 sm:leading-[3.5rem]">
                                 The Most Trusted Cryptocurrency Platform

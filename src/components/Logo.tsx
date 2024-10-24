@@ -14,14 +14,8 @@ export default function Logo() {
         { href: '#', src: tether, alt: 'Tether' },
         { href: '#', src: bitmex, alt: 'Bitmex' },
     ]
-
-    const stats = [
-        { total: "99K", tagline: "People have joined" },
-        { total: "50k", tagline: "VVIP users have joined" },
-        { total: "100+", tagline: "Big Companies have joined" }
-    ]
     return (
-        <section className="my-8 lg:my-16 bg-white">
+        <section className="my-8 lg:my-16">
             <div className="py-8 mx-auto max-w-screen-xl">
                 <div className="flex flex-wrap lg:justify-between justify-center gap-8 text-gray-500 sm:gap-12">
                     {/* <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-5 dark:text-gray-400"> */}

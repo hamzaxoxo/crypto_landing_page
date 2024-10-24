@@ -2,11 +2,14 @@ import Image from 'next/image'
 import React from 'react'
 import hero from '../assets/safari.svg'
 import Logo from './Logo'
+
 export default function Hero() {
     return (
-        <section className="bg-white my-20">
-            <div className="mt-10 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-8 lg:px-12">
-                <div className="mb-4 text space-y-2 text-[40px] md:text-[56px] font-extrabold">
+        <section className="relative py-6 sm:py-12 bg-white">
+            <div className="blur-sm absolute inset-x-0 bottom-0 h-1/2 bg-[#F8F8FC] z-0" />
+
+            <div className="relative z-10 mt-10 py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-8 lg:px-12">
+                <div className="mb-4 space-y-2 text-[40px] md:text-[56px] font-extrabold">
                     <h1 className="text-[#2752E7] tracking-tight leading-none">
                         One platform
                     </h1>
@@ -19,12 +22,13 @@ export default function Hero() {
                     Open a free account in minutes right from your phone and make your money go further
                 </p>
             </div>
-            <form className="px-4 max-w-xl mx-auto flex items-center sm:flex-row flex-col gap-3">
+
+            <form className="relative z-10 px-4 max-w-xl mx-auto flex items-center sm:flex-row flex-col gap-3 mt-8">
                 <input
                     type="text"
                     id="voice-search"
-                    className="flex-1 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pr-10 pl-5 py-5 placeholder:text[#A9A9A9]"
-                    placeholder="Email Address...."
+                    className="flex-1 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full pr-10 pl-5 py-5 placeholder:text-[#A9A9A9]"
+                    placeholder="Email Address..."
                 />
                 <button
                     type="submit"
@@ -34,7 +38,7 @@ export default function Hero() {
                 </button>
             </form>
 
-            <div className="lg:block md:block sm:block hidden max-w-6xl px-10 mx-auto mt-40">
+            <div className="relative z-10 lg:block md:block sm:block hidden max-w-6xl px-10 mx-auto mt-20">
                 <Image
                     src={hero}
                     alt="Hero Image"
@@ -44,9 +48,9 @@ export default function Hero() {
                 />
             </div>
 
-
-            <Logo />
+            <div className="relative z-10">
+                <Logo />
+            </div>
         </section>
-
     )
 }

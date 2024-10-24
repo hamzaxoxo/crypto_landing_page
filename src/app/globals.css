@@ -3,15 +3,78 @@
 @tailwind utilities;
 
 .font-yukita-black {
-    font-family: var(--font-yukita-black);
-  }
-  
-  .font-yukita-bold {
-    font-family: var(--font-yukita-bold);
-  }
-  
-  .font-yukita-regular {
-    font-family: var(--font-yukita-regular);
-  }
+  font-family: var(--font-yukita-black);
+}
 
+.font-yukita-bold {
+  font-family: var(--font-yukita-bold);
+}
 
+.font-yukita-regular {
+  font-family: var(--font-yukita-regular);
+}
+
+.marginBottom {
+  margin-bottom: 20px;
+}
+
+.test-padd {
+  padding: 24px 26px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.circle.three {
+  width: 450px;
+  height: 450px;
+  bottom: -240px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.circle.four {
+  border: none;
+  background-color: #406eec;
+  width: 160px;
+  height: 160px;
+  left: -60px;
+  top: -60px;
+  z-index: 0;
+}
+.circle.two {
+  width: 278px;
+  height: 278px;
+  right: -80px;
+  top: -120px;
+}
+
+@media screen and (max-width: 768px) {
+  .circle.three {
+    width: 450px;
+    height: 450px;
+    bottom: -400px;
+  }
+  .circle.two {
+    width: 200px;
+    height: 200px;
+    right: -60px;
+    top: -100px;
+  }
+  .circle.four {
+    width: 100px;
+    height: 100px;
+    left: -40px;
+    top: -40px;
+  }
+  .TextSection {
+    padding: 10px 20px;
+  }
+}
+
+.TextSection {
+  padding: 10px 20px;
+  z-index: 9999 !important;
+}
