@@ -20,110 +20,37 @@ export default function Footer() {
         { name: 'Research', href: '#' },
         { name: 'Market Updates', href: '#' },
     ]
+    const ProductLinks = [
+        { name: 'Stock & Fund', href: '#' },
+        { name: 'Cash Card', href: '#' },
+        { name: 'Crypto', href: '#' },
+        { name: 'Options', href: '#' },
+        { name: 'Gold', href: '#' },
+        { name: 'Learn Snacks', href: '#' },
+    ]
+    const SupportLinks = [
+        { name: 'Support Center', href: '#' },
+        { name: 'Contact Us', href: '#' },
+        { name: 'System Status', href: '#' },
+        { name: 'Areas of Availability', href: '#' },
+    ]
+    const ResourcesLinks = [
+        { name: 'Prices', href: '#' },
+        { name: 'Site Widgets', href: '#' },
+        { name: 'Tax', href: '#' },
+        { name: 'Support', href: '#' },
+    ]
     return (
-        <footer className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <footer className="text-gray-600 body-font px-5">
+            <div className="border-b border-[#CFD1D4] max-w-7xl mx-auto flex md:items-start lg:items-start lg:flex-row lg:flex-nowrap justify-between flex-col">
+                <div className="flex flex-col lg:mx-0 mx-auto text-center lg:text-left lg:w-[29rem] w-full mb-10 lg:pr-16">
+                    <a className="flex title-font items-center lg:justify-start justify-center title-font font-medium text-gray-900">
                         <Image src={logo} alt="logo" width={200} height={40} />
                     </a>
-                    <p className="mt-2 text-[12px] text-gray-500">
+                    <p className="mt-2 text-[16px] text-gray-500 lg:text-left text-center">
                         Take your crypto to the next level
                     </p>
-                </div>
-                <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                            CATEGORIES
-                        </h2>
-                        <nav className="list-none mb-10">
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                            </li>
-                        </nav>
-                    </div>
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                            CATEGORIES
-                        </h2>
-                        <nav className="list-none mb-10">
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                            </li>
-                        </nav>
-                    </div>
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                            CATEGORIES
-                        </h2>
-                        <nav className="list-none mb-10">
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                            </li>
-                        </nav>
-                    </div>
-                    <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-                            CATEGORIES
-                        </h2>
-                        <nav className="list-none mb-10">
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">First Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Second Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Third Link</a>
-                            </li>
-                            <li>
-                                <a className="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                            </li>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <div className="bg-gray-100">
-                <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                    <p className="text-gray-500 text-sm text-center sm:text-left">
-                        © 2020 Tailblocks —
-                        <a
-                            href="https://twitter.com/knyttneve"
-                            rel="noopener noreferrer"
-                            className="text-gray-600 ml-1"
-                            target="_blank"
-                        >
-                            @knyttneve
-                        </a>
-                    </p>
-                    <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <span className="flex sm:mt-5 mt-2 lg:justify-start justify-center">
                         <a className="text-gray-500">
                             <svg
                                 fill="currentColor"
@@ -181,6 +108,40 @@ export default function Footer() {
                         </a>
                     </span>
                 </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 w-full">
+                    {
+                        [companyLinks, LearnLinks, ProductLinks, SupportLinks, ResourcesLinks].map((links, index) => (
+                            <div key={index} className="flex flex-col">
+                                <h2 className="title-font font-semibold text-[#2C3131] text-[18px] tracking-wide mb-3">
+                                    {index === 0 ? 'Company' : index === 1 ? 'Learn' : index === 2 ? 'Product' : index === 3 ? 'Support' : 'Resources'}
+                                </h2>
+                                <nav className="space-y-4 list-none mb-10">
+                                    {links.map((link, i) => (
+                                        <li key={i}>
+                                            <a className="text-[16px] tracking-wide text-[#70747D] font-thin" href={link.href}>
+                                                {link.name}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </nav>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+            <div className="text-[#A0A3A9] text-[16px] text-center pt-8 pb-16 flex gap-2 justify-center items-center">
+                <p>
+                    © Design by
+                    <a
+                        href="https://twitter.com/knyttneve"
+                        rel="noopener noreferrer"
+                        className="ml-1"
+                        target="_blank"
+                    >
+                        Dliya’ Zarror Nibros.
+                    </a>
+                </p>
+                <p> All rights reserved.</p>
             </div>
         </footer>
 
